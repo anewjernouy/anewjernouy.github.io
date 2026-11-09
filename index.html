@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#07090d">
+  <title>LOCAL DOMAIN V6 — your space</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars"></div><div class="glow glow-green"></div><div class="glow glow-red"></div>
+  <header class="topbar">
+    <a class="brand" href="#" data-page="home"><span class="brand-mark">⌞🏴‍☠️⌝</span><span>LOCAL</span></a>
+    <nav class="nav">
+      <button class="nav-btn active" data-page="games">▦ <span>Games</span></button>
+      <button class="nav-btn" data-page="browser">◉ <span>Browser</span></button>
+      
+      <button class="nav-btn" data-page="apps">▣ <span>Apps</span></button>
+      <button class="nav-btn" data-page="settings">⚙ <span>Settings</span></button>
+      <button class="nav-btn" data-page="more">＋ <span>More</span></button>
+    </nav>
+    <div class="top-right"><span class="status-dot"></span><span>YOUR SPACE</span></div>
+  </header>
+
+  <main>
+    <section id="home" class="page">
+      <div class="hero hero-premium">
+        <div class="eyebrow"><span class="status-dot"></span> YOUR OWN CORNER OF THE INTERNET</div>
+        <h1>Welcome to <span class="gradient-text">LOCAL DOMAIN</span></h1>
+        <p class="sub">Games, browsing and your favourite places — all in one spot.</p>
+        <div class="hero-search"><span>⌕</span><input id="homeSearch" placeholder="Search the web or open a website..."><button id="homeSearchBtn">Go ↗</button></div>
+        <div class="quick-links">
+          <button class="quick" data-open="https://discord.com"><b class="discord">●</b> Discord</button>
+          <button class="quick" data-open="https://www.youtube.com"><b class="youtube">▶</b> YouTube</button>
+          <button class="quick" data-open="https://www.tiktok.com"><b class="tiktok">♪</b> TikTok</button>
+          <button class="quick" data-open="https://open.spotify.com"><b class="spotify">◉</b> Spotify</button>
+          <button class="quick add" data-page="apps">＋</button>
+        </div>
+        <p class="tiny">Pick a section above to get started.</p>
+      </div>
+      <div class="home-cards">
+        <button class="feature-card" data-page="games"><span class="feature-icon">🎮</span><span><b>Game zone</b><small>Jump into a game</small></span><span class="arrow">↗</span></button>
+        <button class="feature-card" data-page="browser"><span class="feature-icon">🌐</span><span><b>Browser</b><small>Search and explore</small></span><span class="arrow">↗</span></button>
+        <button class="feature-card" data-page="apps"><span class="feature-icon">✦</span><span><b>Apps</b><small>Your quick links</small></span><span class="arrow">↗</span></button>
+      </div>
+      <div class="home-status"><span><i></i> LOCAL IS READY</span><span>YOUR SPACE · YOUR SHORTCUTS · YOUR GAMES</span><span>✦ BUILT FOR YOUR CREW</span></div>
+    </section>
+
+    <section id="games" class="page active">
+      <div class="section-head">
+        <div><div class="eyebrow">TAKE A BREAK</div><h2>Game <span class="gradient-text">zone</span></h2><p class="sub">Choose a game and play right here.</p></div>
+        <div class="game-search"><span>⌕</span><input id="gameSearch" placeholder="Find a game..."></div>
+      </div>
+      <div class="game-grid" id="gameGrid">
+        <button class="game-card" data-game="clickrush" data-name="Click Rush"><div class="game-art art-orange">⚡</div><div class="game-info"><b>Click Rush</b><small>Click as fast as you can · 15 sec</small></div><span class="play-pill">PLAY</span></button>
+        <button class="game-card" data-game="reaction" data-name="Reaction Test"><div class="game-art art-blue">⏱️</div><div class="game-info"><b>Reaction Test</b><small>Test your reaction speed</small></div><span class="play-pill">PLAY</span></button>
+        <button class="game-card" data-game="tictactoe" data-name="Tic-Tac-Toe"><div class="game-art art-purple">✕ ○</div><div class="game-info"><b>Tic-Tac-Toe</b><small>Two-player classic</small></div><span class="play-pill">PLAY</span></button>
+        <button class="game-card" data-game="number" data-name="Number Guess"><div class="game-art art-green">?</div><div class="game-info"><b>Number Guess</b><small>Can you find the number?</small></div><span class="play-pill">PLAY</span></button>
+        <button class="game-card" data-game="memory" data-name="Memory Match"><div class="game-art art-purple">🌙</div><div class="game-info"><b>Memory Match</b><small>Find the six matching pairs</small></div><span class="play-pill">PLAY</span></button>
+        <button class="game-card" data-game="quickmath" data-name="Quick Math"><div class="game-art art-blue">×</div><div class="game-info"><b>Quick Math</b><small>Ten multiplication questions</small></div><span class="play-pill">PLAY</span></button>
+        <button class="game-card" data-open="https://duckmaths.com/"><div class="game-art art-duck">🦆</div><div class="game-info"><b>DuckMaths</b><small>Explore the official DuckMaths games site</small></div><span class="play-pill">OPEN ↗</span></button>
+      </div>
+      <section class="duck-library" aria-labelledby="duckLibraryTitle">
+        <div class="library-heading">
+          <div><div class="eyebrow">DUCKMATHS COLLECTION</div><h3 id="duckLibraryTitle">DuckMaths <span class="gradient-text">catalogue</span></h3><p class="sub">Open the live DuckMaths catalogue. LOCAL will not invent game names or pretend unavailable titles are playable.</p></div>
+          <div class="library-count"><strong>LIVE</strong><span>CATALOGUE</span></div>
+        </div>
+        <div class="duck-live-panel">
+          <div class="duck-live-icon">🦆</div>
+          <div class="duck-live-copy"><strong>Browse the live DuckMaths games</strong><span>The catalogue is maintained by DuckMaths, so its current titles and availability stay with the original site.</span></div>
+          <button class="primary-action" id="openDuckMaths">Open catalogue ↗</button>
+        </div>
+        <p class="note">The 500-entry target is a goal, not a claim that 500 games have been checked. This build only lists games when their titles and destinations can be verified; no filler entries or fake playable links.</p>
+      </section>
+      <div id="gameStage" class="game-stage hidden">
+        <div class="stage-head"><div><span class="eyebrow">NOW PLAYING</span><h3 id="gameTitle">Game</h3></div><button id="closeGame" class="ghost-btn">← All games</button></div>
+        <div id="gameArea" class="game-area"></div>
+      </div>
+      <p class="note">Some games from other websites don't allow embedding. Those open on their official site; LOCAL's built-in games play here.</p>
+    </section>
+
+    <section id="browser" class="page">
+      <div class="eyebrow">EXPLORE THE WEB</div><h2>Your <span class="gradient-text">browser</span></h2>
+      <div class="browser-shell">
+        <div class="browser-tabs" id="browserTabs"><button class="tab active" data-tab="1">◉ New tab <span class="tab-close" title="Close tab">×</span></button><button class="tab-add" id="newTabBtn" title="New tab">＋</button></div>
+        <div class="browser-tools"><button id="backBtn" title="Back">←</button><button id="forwardBtn" title="Forward">→</button><button id="reloadBtn" title="Reload">⟳</button><div class="address-wrap">🔒 <input id="address" placeholder="Search DuckDuckGo or enter a website address"><button id="visitBtn">Go</button></div><button id="externalBtn" title="Open in new tab">↗</button></div>
+        <div class="browser-shortcuts"><button data-url="https://duckduckgo.com">⌕ DuckDuckGo</button><button data-url="https://www.youtube.com">▶ YouTube</button><button data-url="https://www.tiktok.com">♪ TikTok</button><button data-url="https://duckmaths.com">🦆 DuckMaths</button></div>
+        <div class="browser-help">If a site or search results stay blank, it may block embedding. Use the ↗ button to open the current address in a normal browser tab.</div><div class="browser-frame"><div class="frame-message" id="frameMessage"><div class="big-globe">🌌</div><h3>Your browser space</h3><p>Search DuckDuckGo or enter a website address above.</p><small>Some sites refuse to load inside embedded browsers. If a page stays blank, use the ↗ button to open that same address in a normal browser tab.</small></div><iframe id="webFrame" title="Browser preview" src="about:blank" referrerpolicy="no-referrer" loading="lazy"></iframe></div>
+      </div>
+    </section>
+
+    <section id="apps" class="page">
+      <div class="eyebrow">YOUR SHORTCUTS</div><h2>Quick <span class="gradient-text">apps</span></h2><p class="sub">Open your favourite sites.</p>
+      <div class="link-grid">
+        <a class="app-card" href="https://discord.com" target="_blank" rel="noopener"><span class="discord">●</span><b>Discord</b><small>Community</small></a>
+        <a class="app-card" href="#" data-open="https://www.youtube.com"><span class="youtube">▶</span><b>YouTube</b><small>Videos</small></a>
+        <a class="app-card" href="#" data-open="https://www.tiktok.com"><span class="tiktok">♪</span><b>TikTok</b><small>Short videos</small></a>
+        <a class="app-card" href="https://open.spotify.com" target="_blank" rel="noopener"><span class="spotify">◉</span><b>Spotify</b><small>Music</small></a>
+        <a class="app-card duck-app" href="https://duckmaths.com/" target="_blank" rel="noopener"><span>🦆</span><b>DuckMaths</b><small>Games and activities</small></a>
+      </div>
+    </section>
+
+    <section id="settings" class="page">
+      <div class="eyebrow">MAKE IT YOURS</div><h2><span class="gradient-text">Settings</span></h2>
+      <div class="settings-card"><div><b>Background effects</b><small>Show the stars and colour glow.</small></div><label class="switch"><input type="checkbox" id="effectsToggle" checked><span></span></label></div>
+      <div class="settings-card"><div><b>Reduced motion</b><small>Turn off animated background effects.</small></div><label class="switch"><input type="checkbox" id="motionToggle"><span></span></label></div>
+    </section>
+
+    <section id="more" class="page">
+      <div class="eyebrow">ABOUT THIS SPACE</div><h2>More <span class="gradient-text">stuff</span></h2>
+      <div class="settings-card"><div><b>LOCAL</b><small>A small shared space for your group. No accounts or sign-in in this version.</small></div><span>🏴‍☠️</span></div>
+      <p class="note">Only use websites and games in line with the rules of the network you're using.</p>
+    </section>
+  </main>
+  <footer><span>⌞🏴‍☠️⌝ LOCAL</span><span>Made for your little corner of the web</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
